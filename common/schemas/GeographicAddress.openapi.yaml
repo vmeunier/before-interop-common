@@ -14,90 +14,90 @@ components:
         Structured textual way of describing how to find a Property in an urban area (country properties are often defined differently).
       allOf:
         - $ref: "./Extensible.openapi.yaml#/components/schemas/Extensible"
-      properties:
-        city:
-          type: string
-          description: |
-            City the address is in.
+        - properties:
+            city:
+              type: string
+              description: |
+                City the address is in.
 
-            Correspond à la propriété `commune` de l'IPE.
-        country:
-          type: string
-          description: Country the address is in
-        locality:
-          type: string
-          description: |
-            An area of defined or undefined boundaries within a local authority or other legislatively defined area,
-            usually rural or semi rural in nature.
-        postcode:
-          type: string
-          description: |
-            Descriptor for a postal delivery area, used to speed and simplify the delivery of mail (also known as zipcode).
+                Correspond à la propriété `commune` de l'IPE.
+            country:
+              type: string
+              description: Country the address is in
+            locality:
+              type: string
+              description: |
+                An area of defined or undefined boundaries within a local authority or other legislatively defined area,
+                usually rural or semi rural in nature.
+            postcode:
+              type: string
+              description: |
+                Descriptor for a postal delivery area, used to speed and simplify the delivery of mail (also known as zipcode).
 
-            Correspond à la propriété `code_postal` de l'IPE.
-        stateOrProvince:
-          type: string
-          description: the State or Province that the address is in
-        streetName:
-          type: string
-          description: |
-            Name of the street or other street type.
+                Correspond à la propriété `code_postal` de l'IPE.
+            stateOrProvince:
+              type: string
+              description: the State or Province that the address is in
+            streetName:
+              type: string
+              description: |
+                Name of the street or other street type.
 
-            Correspond à la propriété `nom_voie` de l'IPE.
-        streetNr:
-          type: string
-          description: |
-            Number identifying a specific property on a public street.
+                Correspond à la propriété `nom_voie` de l'IPE.
+            streetNr:
+              type: string
+              description: |
+                Number identifying a specific property on a public street.
 
-            Correspond à la propriété `numero_voie` de l'IPE.
-        streetNrSuffix:
-          type: string
-          description: the first street number suffix
-        streetSuffix:
-          type: string
-          description: A modifier denoting a relative direction
-        streetType:
-          type: string
-          description: |
-            alley, avenue, boulevard, brae, crescent, drive, highway, lane, terrace, parade, place, tarn, way, wharf, ...
+                Correspond à la propriété `numero_voie` de l'IPE.
+            streetNrSuffix:
+              type: string
+              description: the first street number suffix
+            streetSuffix:
+              type: string
+              description: A modifier denoting a relative direction
+            streetType:
+              type: string
+              description: |
+                alley, avenue, boulevard, brae, crescent, drive, highway, lane, terrace, parade, place, tarn, way, wharf, ...
 
-            Correspond à la propriété `type_voie` de l'IPE.
-        code_insee:
-          type: string
-          description: |
-            Code INSEE de la commune.
+                Correspond à la propriété `type_voie` de l'IPE.
+            code_insee:
+              type: string
+              description: |
+                Code INSEE de la commune.
 
-            Correspond à la propriété `code_insee` de l'IPE.
-        code_hexacle:
-          type: string
-          minLength: 10
-          maxLength: 10
-          description: |
-            Code "hexaclé numéro" associé à l'adresse publiée tel que décrit dans les référentiels du SNA (diffusion par Mediapost, Uniserve, etc).
-            Ce code est défini par le groupe Interop comme l'identifiant unique de l'adresse utilisé dans les échanges inter-opérateurs sur l'infrastructure et l'accès.
+                Correspond à la propriété `code_insee` de l'IPE.
+            code_hexacle:
+              type: string
+              minLength: 10
+              maxLength: 10
+              description: |
+                Code "hexaclé numéro" associé à l'adresse publiée tel que décrit dans les référentiels du SNA (diffusion par Mediapost, Uniserve, etc).
+                Ce code est défini par le groupe Interop comme l'identifiant unique de l'adresse utilisé dans les échanges inter-opérateurs sur l'infrastructure et l'accès.
 
-            En cas d'absence de ce code au moment de la diffusion de l'adresse dans l'IPE,
-            il est à la charge de l'opérateur d'immeuble d'en demander sa création auprès du SNA.
+                En cas d'absence de ce code au moment de la diffusion de l'adresse dans l'IPE,
+                il est à la charge de l'opérateur d'immeuble d'en demander sa création auprès du SNA.
 
-            Cet identifiant est unique pour une adresse donnée mais il peut apparaitre plusieurs fois chez certains opérateurs
-            qui décrivent l'adresse jusqu'au champ batiment.
+                Cet identifiant est unique pour une adresse donnée mais il peut apparaitre plusieurs fois chez certains opérateurs
+                qui décrivent l'adresse jusqu'au champ batiment.
 
-            Correspond à la propriété `CodeAdresseImmeuble` de l'IPE.
-        code_hexacle_voie:
-          type: string
-          minLength: 10
-          maxLength: 10
-          description: |
-            Correspond à la propriété `CodeHexacleVoie` de l'IPE.
-            Il correspond au 0 de la voie et est différent du code Hexavia.
+                Correspond à la propriété `CodeAdresseImmeuble` de l'IPE.
+            code_hexacle_voie:
+              type: string
+              minLength: 10
+              maxLength: 10
+              description: |
+                Correspond à la propriété `CodeHexacleVoie` de l'IPE.
+                Il correspond au 0 de la voie et est différent du code Hexavia.
 
-            La bonne pratique est de le renseigner s'il existe
-            et particulièrement en l'absence de code Hexacle.
-        code_rivoli:
-          type: string
-          description: |
-            Code Rivoli de la commune.
+                La bonne pratique est de le renseigner s'il existe
+                et particulièrement en l'absence de code Hexacle.
+            code_rivoli:
+              type: string
+              description: |
+                Code Rivoli de la commune.
 
-            Correspond à la propriété `code_rivoli` de l'IPE.
-        code_ban:
-          type: string
+                Correspond à la propriété `code_rivoli` de l'IPE.
+            code_ban:
+              type: string

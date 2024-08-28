@@ -17,13 +17,13 @@ components:
       allOf:
         - $ref: "./Extensible.openapi.yaml#/components/schemas/Extensible"
         - $ref: "./Addressable.openapi.yaml#/components/schemas/Addressable"
-      properties:
-        id:
-          type: string
-          readOnly: true
-        href:
-          type: string
-          readOnly: true
-        "@version":
-          type: string
-          readOnly: true
+        - properties:
+            id:
+              type: string
+              readOnly: true
+            href:
+              type: string
+              readOnly: true
+            "@version":
+              type: string
+              readOnly: true

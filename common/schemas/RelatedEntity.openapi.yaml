@@ -18,21 +18,21 @@ components:
         - id
       allOf:
         - $ref: "./EntityRef.openapi.yaml#/components/schemas/EntityRef"
-      properties:
-        "@type":
-          type: string
-          default: "RelatedEntity"
-          example: "RelatedEntity"
-        "@baseType":
-          type: string
-          default: "RelatedEntity"
-          example: "RelatedEntity"
-        id:
-          type: string
-          description: Unique identifier of a related entity.
-        "@referredType":
-          type: string
-          description: The actual type of the target instance when needed for disambiguation.
-        role:
-          description: The role of an entity.
-          type: string
+        - properties:
+            "@type":
+              type: string
+              default: "RelatedEntity"
+              example: "RelatedEntity"
+            "@baseType":
+              type: string
+              default: "RelatedEntity"
+              example: "RelatedEntity"
+            id:
+              type: string
+              description: Unique identifier of a related entity.
+            "@referredType":
+              type: string
+              description: The actual type of the target instance when needed for disambiguation.
+            role:
+              description: The role of an entity.
+              type: string
