@@ -19,10 +19,10 @@ components:
       allOf:
         - $ref: "./Extensible.openapi.yaml#/components/schemas/Extensible"
         - $ref: "./Addressable.openapi.yaml#/components/schemas/Addressable"
-      properties:
-        name:
-          description: Name of the related entity.
-          type: string
-        "@referredType":
-          description: Type of the related entity.
-          type: string
+        - properties:
+            name:
+              description: Name of the related entity.
+              type: string
+            "@referredType":
+              description: Type of the related entity.
+              type: string
