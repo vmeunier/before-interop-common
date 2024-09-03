@@ -245,7 +245,7 @@ components:
             * `WGS84`: World Geodetic System 1984 (Longitude/Latitude)
                 Système de coordonnées utilisé par le GPS.
                 Il est le système français de référence pour la Guadeloupe et la Martinique.
-            * `RFG93`: (Lambert 93) Réseau Français métropolitain de Géodésie 1993 (Easting/Northing).
+            * `RGF93`: (Lambert 93) Réseau Français métropolitain de Géodésie 1993 (Easting/Northing).
             * `RGFG95`: Réseau Géodésique Français Guyane 1995 (Easting/Northing)
             * `RGR92`: Réseau Géodésique de la Réunion 1992 (Easting/Northing)
             * `RGM04`: Réseau Géodésique de Mayotte 2004 (Easting/Northing)
@@ -254,7 +254,7 @@ components:
             Correspond à la propriété `typeProjection` de l'building.
           enum:
             - WGS84
-            - RFG93
+            - RGF93
             - RGFG95
             - RGR92
             - RGM04
